@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karabi Global Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="KGS Logo.png" alt="Karabi Global Solutions Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#career">Career</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <div class="content">
+            <h1>Karabi Global Solutions</h1>
+            <p>We Deliver Excellence in Food Safety and Compliance</p>
+            <button onclick="scrollToSection('about')">Learn More</button>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="futuristic-section">
+        <h2>About Karabi Global Solutions</h2>
+        <p>Specializing in food safety and compliance, we ensure companies meet global standards with top-tier training and consultation.</p>
+        <div class="cards">
+            <div class="card">
+                <h3>Our Mission</h3>
+                <p>Enhancing global food safety standards through innovation and expertise.</p>
+            </div>
+            <div class="card">
+                <h3>Our Vision</h3>
+                <p>To be the global leader in food safety training and consultation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="futuristic-section">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-item">
+                <h3>Food Safety Training</h3>
+                <p>Comprehensive training for BRC, FSSAI, ISO 22000, and HACCP standards.</p>
+            </div>
+            <div class="service-item">
+                <h3>Consultation Services</h3>
+                <p>Guidance to achieve compliance with global food safety standards.</p>
+            </div>
+            <div class="service-item">
+                <h3>Auditing Support</h3>
+                <p>Preparation and support for successful food safety audits and certifications.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Section -->
+    <section id="career" class="futuristic-section">
+        <h2>Career Opportunities</h2>
+        <p>Join our team and contribute to improving global food safety standards.</p>
+        <button onclick="scrollToSection('contact')">Apply Now</button>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p><strong>Email:</strong> info@karabiglobal.com</p>
+            <p><strong>Phone:</strong> +91-1234567890</p>
+            <p><strong>Address:</strong> 123 Food Safety Avenue, Mumbai, India</p>
+        </div>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Karabi Global Solutions. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+</body>
+</html>
